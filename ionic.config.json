@@ -1,0 +1,7 @@
+{
+  "name": "free-food",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
