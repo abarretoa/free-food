@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Botão de menu lateral -->
+    </ion-buttons>
+    <ion-title>FREE-FOOD</ion-title> <!-- Nome do beneficiado -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="main-content"> <!-- Content com id para o menu -->
+  <!-- Saudação "Bem-vindo, Nome da Pessoa" -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Bem-vindo, {{ nomeCompleto }}!</ion-title> <!-- Saudação com o nome -->
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <!-- Botão para navegar para Alimentos Disponíveis -->
+  <ion-button 
+    expand="full" 
+    color="primary" 
+    (click)="navegarParaAlimentosDisponiveis()">
+    Ver Alimentos Disponíveis
+  </ion-button>
+</ion-content>

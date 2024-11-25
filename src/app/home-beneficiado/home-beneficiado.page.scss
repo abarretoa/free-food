@@ -1,0 +1,54 @@
+/* Estilização para a página Home do Beneficiado */
+#main-content {
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff); /* Gradiente suave para o fundo */
+  padding: 20px;
+}
+
+ion-header {
+  --background: #004d40; /* Cor mais escura e elegante */
+  --color: #ffffff; /* Texto branco para contraste */
+}
+
+ion-toolbar {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+ion-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff; /* Texto branco */
+}
+
+ion-button {
+  --background: #00796b; /* Verde aquático para o botão */
+  --color: #ffffff; /* Texto branco */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar os botões */
+  transition: transform 0.3s ease, background 0.3s ease; /* Animação suave */
+}
+
+ion-button:hover {
+  --background: #009688; /* Cor de destaque ao passar o mouse */
+  transform: scale(1.03); /* Leve ampliação */
+}
+
+ion-button:active {
+  transform: scale(0.97); /* Leve redução ao clicar */
+}
+
+/* Estilização específica para a saudação */
+ion-header ion-title {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #004d40; /* Verde escuro para contraste */
+  text-align: center;
+}
+ion-content {
+  --background: linear-gradient(to bottom, #f9fbe7, #ffffff); /* Gradiente suave */
+  padding: 20px;
+}

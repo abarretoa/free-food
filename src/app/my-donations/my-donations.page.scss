@@ -1,0 +1,97 @@
+/* Estilização Geral */
+ion-content {
+    --background: #f4f4f9; /* Fundo claro e suave */
+    padding: 16px;
+  }
+  
+  /* Estilização da Lista */
+  ion-list {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    padding: 8px;
+  }
+  
+  /* Estilização dos Itens */
+  ion-item {
+    --background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header do Item */
+  ion-item .item-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Detalhes do Alimento */
+  ion-item .item-details {
+    font-size: 14px;
+    color: #555;
+    margin-top: 4px;
+  }
+  
+  /* Botões de Ação */
+  ion-button {
+    --border-radius: 8px;
+    margin: 8px 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-button[color="danger"] {
+    --background: #ff5252;
+    --background-hover: #ff1744;
+    --box-shadow: 0 4px 8px rgba(255, 82, 82, 0.3);
+  }
+  
+  ion-button[color="primary"] {
+    --background: #2196f3;
+    --background-hover: #1976d2;
+    --box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+  }
+  
+  /* Botões no Footer do Item */
+  ion-item .item-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  /* Separador */
+  ion-item-divider {
+    margin: 16px 0;
+    height: 2px;
+    background-color: #e0e0e0;
+  }
+  
+  /* Títulos */
+  ion-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50; /* Verde para o título */
+    text-align: center;
+  }
+  
+  /* Toast de Sucesso */
+  .toast-success {
+    --background: #4caf50;
+    --color: white;
+  }
+  
+  /* Toast de Aviso */
+  .toast-warning {
+    --background: #ff9800;
+    --color: white;
+  }
+  
+  /* Toast de Erro */
+  .toast-danger {
+    --background: #f44336;
+    --color: white;
+  }
+  

@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-title">Nova Doação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Card para Adicionar Alimentos -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Adicionar Alimentos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Formulário Dinâmico para Cada Alimento -->
+      <div *ngFor="let alimento of alimentosTemp; let i = index">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle class="ion-card-subtitle">Alimento {{ i + 1 }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Nome</ion-label>
+              <ion-input [(ngModel)]="alimento.nome" placeholder="Ex: Arroz"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Descrição</ion-label>
+              <ion-input
+                [(ngModel)]="alimento.descricao"
+                placeholder="Ex: Arroz integral, pacote fechado"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Quantidade</ion-label>
+              <ion-input
+                type="number"
+                [(ngModel)]="alimento.quantidade"
+                placeholder="Ex: 5"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Local de Retirada</ion-label>
+              <ion-input
+                [(ngModel)]="alimento.localRetirada"
+                placeholder="Ex: Rua das Flores, 123"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Data Disponível para Retirada</ion-label>
+              <ion-datetime
+                [(ngModel)]="alimento.dataRetirada"
+                placeholder="Selecione a data"
+                presentation="date"
+              ></ion-datetime>
+            </ion-item>
+
+            <!-- Botão para Remover Alimento -->
+            <ion-button
+              color="danger"
+              expand="block"
+              (click)="removerAlimentoTemp(i)"
+            >
+              Remover
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <!-- Botões para Adicionar Novo Campo e Salvar -->
+      <div class="buttons-container">
+        <ion-button expand="block" (click)="adicionarAlimentoTemp()">Adicionar Outro Alimento</ion-button>
+        <ion-button color="success" expand="block" (click)="salvarAlimentos()">Salvar Todos</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

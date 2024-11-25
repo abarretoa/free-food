@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="success" class="container-food">
+    <ion-title class="container-food"> FREE FOOD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="header-section">
+    <!-- Contêiner da imagem -->
+    <div class="image-container">
+      <img src="assets\images\foodfinal.png" alt="Logo" class="background-image" />
+      <div class="overlay">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons-section">
+    <ion-button expand="block" color="success" routerLink="/login">
+      <ion-icon name="log-in-outline" slot="start"></ion-icon>
+      Login
+    </ion-button>
+    <ion-button expand="block" color="tertiary" routerLink="/register">
+      <ion-icon name="person-add-outline" slot="start"></ion-icon>
+      Registrar
+    </ion-button>
+    <ion-button expand="block" color="danger" (click)="sair()">Sair</ion-button>
+
+  </div>
+</ion-content>

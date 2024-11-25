@@ -1,0 +1,95 @@
+/* Estilização Geral */
+ion-content {
+    --background: #f4f4f9; /* Fundo claro e suave */
+    padding: 16px;
+  }
+  
+  /* Estilização do Card */
+  ion-card {
+    background-color: #ffffff; /* Fundo branco para destaque */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilização do Header do Card */
+  ion-card-header {
+    background-color: #4caf50; /* Cor verde para o cabeçalho */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px 12px 0 0;
+    padding: 12px;
+  }
+  
+  /* Botão Principal */
+  ion-button {
+    margin: 8px 0;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Botões de Ação */
+  ion-button[color="danger"] {
+    --background: #ff5252;
+    --background-hover: #ff1744;
+    --box-shadow: 0 4px 8px rgba(255, 82, 82, 0.3);
+  }
+  
+  ion-button[color="success"] {
+    --background: #4caf50;
+    --background-hover: #388e3c;
+    --box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Estilização dos Itens */
+  ion-item {
+    margin: 8px 0;
+    --background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Floating Label */
+  ion-label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  ion-input {
+    font-size: 16px;
+    --placeholder-color: #aaa;
+    --padding-start: 8px;
+  }
+  
+  /* Divisor */
+  ion-item-divider {
+    margin: 16px 0;
+    height: 2px;
+    background-color: #e0e0e0;
+  }
+  
+  /* Estilização do Botão de Adicionar */
+  ion-button[expand="full"] {
+    margin: 16px 0;
+    font-weight: bold;
+  }
+  
+  /* Espaçamento para campos de formulário */
+  div[ngFor] ion-item {
+    margin-bottom: 8px;
+  }
+  
+  ion-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50; /* Verde para o título */
+    text-align: center;
+    
+  }
+
+  ion-card-subtitle{
+    color: black;
+    font-size: large;
+  }
+
+ 

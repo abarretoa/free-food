@@ -1,0 +1,113 @@
+/* CSS para a página inicial do app */
+.container-food {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px; /* Espaçamento entre as letras */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+ion-toolbar {
+  padding: 10px;
+  background-color: #32cd32; /* Cor verde para o cabeçalho */
+}
+
+ion-title {
+  color: #ffffff;
+  font-size: 36px; /* Tamanho grande para destacar o título */
+  font-weight: 700; /* Peso extra para maior impacto */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra no texto para destacar */
+  letter-spacing: 5px; /* Aumenta o espaçamento entre as letras */
+  background-image: linear-gradient(45deg, #ff5722, #8bc34a); /* Gradiente de cor */
+  -webkit-background-clip: text; /* Faz o gradiente aplicar somente no texto */
+  background-clip: text;
+  display: inline-block; /* Garante que o gradiente seja aplicado somente ao texto */
+  padding: 5px;
+}
+ion-toolbar ion-title:hover {
+  transform: scale(1.1); /* Aumenta o título ao passar o mouse */
+  transition: transform 0.3s ease;
+}
+ion-title:active {
+  transform: scale(1); /* Restaura o título ao clicar */
+}
+
+.header-section {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  width: 100%;
+  
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem cobrir todo o espaço */
+  filter: brightness(100%); /* Deixa a imagem um pouco mais escura */
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.buttons-section {
+  padding: 20px;
+}
+
+ion-button {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+}
+
+ion-button:hover {
+  transform: scale(1.05);
+}
+
+ion-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Ajustes para tela pequena */
+@media (max-width: 576px) {
+  .header-section {
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  ion-button {
+    font-size: 14px;
+  }
+
+  .container-food {
+    font-size: 18px;
+  }
+}

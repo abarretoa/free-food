@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title class="ion-title">Registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="register()">
+    <ion-item>
+      <ion-label position="floating">Nome Completo</ion-label>
+      <ion-input [(ngModel)]="fullName" name="fullName" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Usuário</ion-label>
+      <ion-input [(ngModel)]="username" name="username" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input [(ngModel)]="password" name="password" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input [(ngModel)]="cpf" name="cpf" type="text" (input)="validarCpf($event)" required></ion-input>
+    </ion-item>
+    
+    <ion-text color="danger" *ngIf="cpfError">
+      O CPF deve conter apenas números.
+    </ion-text>
+
+    <ion-item>
+      <ion-label>Perfil</ion-label>
+      <ion-radio-group [(ngModel)]="perfil" name="perfil">
+        <ion-item>
+          <ion-label>Doador</ion-label>
+          <ion-radio value="doador"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Beneficiado</ion-label>
+          <ion-radio value="beneficiado"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Registrar</ion-button>
+  </form>
+  <ion-button expand="block" color="light" routerLink="/index">Voltar</ion-button>
+</ion-content>

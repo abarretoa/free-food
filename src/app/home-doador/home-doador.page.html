@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Botão de menu, que irá abrir o menu lateral -->
+    </ion-buttons>
+    <ion-title>FREE-FOOD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" id="main-content">
+  <!-- Saudação "Bem-vindo, Nome da Pessoa" -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Bem-vindo, {{ nomeCompleto }}!</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Botões para redirecionar para Nova Doação e Minhas Doações -->
+  <div class="button-container">
+    <ion-button expand="full" color="primary" (click)="navegarParaNovaDoacao()">Nova Doação</ion-button>
+    <ion-button expand="full" color="secondary" (click)="navegarParaMinhasDoacoes()">Minhas Doações</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Minhas Doações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let alimento of alimentos">
+      <ion-label>
+        <h2>{{ alimento.nome }}</h2>
+        <p>{{ alimento.descricao }}</p>
+        <p>Quantidade: {{ alimento.quantidade }}</p>
+        <p>Local de Retirada: {{ alimento.localRetirada }}</p>
+        <p><strong>Data de Retirada:</strong> {{ alimento.dataRetirada | date: 'dd/MM/yyyy' }}</p>
+      </ion-label>
+
+      <!-- Botões para editar e excluir -->
+      <ion-button fill="clear" color="primary" (click)="editAlimento(alimento)">
+        Editar
+      </ion-button>
+      <ion-button fill="clear" color="danger" (click)="deleteAlimento(alimento.id)">
+        Excluir
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

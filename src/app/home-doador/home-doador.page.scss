@@ -1,0 +1,81 @@
+/* Estilo Geral */
+ion-content {
+  --background: #f4f4f9; /* Fundo claro e suave */
+  padding: 16px;
+}
+
+/* Estilização do Cabeçalho */
+ion-header ion-toolbar {
+  --background: #4caf50; /* Verde Free-Food */
+  color: white;
+  font-weight: bold;
+}
+
+ion-header ion-title {
+  font-size: 24px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+/* Saudação "Bem-vindo" */
+ion-toolbar ion-title {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+/* Container dos Botões */
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaçamento entre os botões */
+}
+
+/* Botões */
+ion-button {
+  --border-radius: 12px; /* Bordas arredondadas */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar os botões */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+/* Botão de Nova Doação */
+ion-button[color="primary"] {
+  --background: #4caf50;
+  --background-hover: #388e3c;
+  --color: white;
+  --box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+/* Botão de Minhas Doações */
+ion-button[color="secondary"] {
+  --background: #2196f3;
+  --background-hover: #1976d2;
+  --color: white;
+  --box-shadow: 0 6px 12px rgba(33, 150, 243, 0.4);
+}
+
+/* Efeitos de Hover */
+ion-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  ion-header ion-title {
+    font-size: 18px;
+  }
+
+  ion-button {
+    font-size: 16px;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+}

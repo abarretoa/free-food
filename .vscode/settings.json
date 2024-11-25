@@ -1,3 +1,19 @@
 {
-  "typescript.preferences.autoImportFileExcludePatterns": ["@ionic/angular/common", "@ionic/angular/standalone"]
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular/standalone"
+  ],
+  "cSpell.words": [
+    "Alimento",
+    "alimentos",
+    "beneficiado",
+    "Completo",
+    "Configuracoes",
+    "Disponiveis",
+    "doador",
+    "freefood",
+    "navegar",
+    "passsword",
+    "perfil"
+  ]
 }

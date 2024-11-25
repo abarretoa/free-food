@@ -1,0 +1,83 @@
+/* Fundo geral da página */
+ion-content {
+    --background: linear-gradient(to bottom, #f9fbe7, #ffffff); /* Gradiente suave */
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  ion-header {
+    --background: #33691e; /* Verde escuro elegante */
+    --color: #ffffff; /* Texto branco para contraste */
+  }
+  
+  ion-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  /* Lista de alimentos */
+  ion-list {
+    margin-top: 20px;
+  }
+  
+  ion-item {
+    --background: #ffffff; /* Fundo branco para destacar itens */
+    margin-bottom: 15px; /* Espaço entre os itens */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 10px;
+  }
+  
+  /* Estilização do texto dos itens */
+  ion-label h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #33691e; /* Cor de destaque para o nome */
+  }
+  
+  ion-label p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #616161; /* Cinza suave */
+    margin: 5px 0;
+  }
+  
+  /* Botão de retirada */
+  ion-button {
+    --background: #558b2f; /* Verde claro para o botão */
+    --color: #ffffff; /* Texto branco */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  ion-button:hover {
+    --background: #76b041; /* Cor mais viva ao passar o mouse */
+    transform: scale(1.03); /* Leve ampliação */
+  }
+  
+  ion-button:active {
+    transform: scale(0.97); /* Leve redução ao clicar */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    ion-label h2 {
+      font-size: 1.2rem;
+    }
+  
+    ion-label p {
+      font-size: 1rem;
+    }
+  
+    ion-button {
+      font-size: 1rem;
+    }
+  }
+  
